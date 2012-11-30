@@ -30,7 +30,7 @@ echo "GSSAPICleanupCredentials yes" >> /etc/ssh/sshd_config
 echo "UsePAM yes" >> /etc/ssh/sshd_config
 echo "X11Forwarding no" >> /etc/ssh/sshd_config
 echo "UseDNS yes" >> /etc/ssh/sshd_config
-service sshd restart
+service ssh restart
 service fail2ban restart
-service apache2 stop
+service httpd stop
 #EOF
