@@ -33,4 +33,5 @@ echo "UseDNS yes" >> /etc/ssh/sshd_config
 service ssh restart
 service fail2ban restart
 service httpd stop
+service apache2 stop
 #EOF
