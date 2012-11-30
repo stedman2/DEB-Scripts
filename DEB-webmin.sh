@@ -3,10 +3,11 @@
 # update
 apt-get -y update && apt-get -y upgrade
 # install shiz needed
-apt-get -y install libnet-ssleay-perl libauthen-pam-perl libio-pty-perl apt-show-versions
+
+apt-get -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
+#
 apt-get -f install
-
-
+#
 wget http://prdownloads.sourceforge.net/webadmin/webmin_1.610_all.deb
 #
 dpkg --install webmin_1.610_all.deb
