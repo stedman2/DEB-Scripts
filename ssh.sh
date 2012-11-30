@@ -8,7 +8,7 @@ apt-get -y update && apt-get -y upgrade && apt-get -y install nano fail2ban
 # remove default config
 rm -rf /etc/ssh/sshd_config
 echo -e "#AutoGen on `date` by `whoami` " >> /etc/ssh/sshd_config
-echo "Your port number for SSH LOGIN - REMEMBER 
+echo "Your port number for SSH LOGIN - REMEMBER"
 read portn
 echo "Login to SHH on port number: $portn "
 echo "Port $portn" >> /etc/ssh/sshd_config
@@ -30,3 +30,7 @@ echo "GSSAPICleanupCredentials yes" >> /etc/ssh/sshd_config
 echo "UsePAM yes" >> /etc/ssh/sshd_config
 echo "X11Forwarding no" >> /etc/ssh/sshd_config
 echo "UseDNS yes" >> /etc/ssh/sshd_config
+service sshd restart
+service fail2ban restart
+service apache2 stop
+#EOF
