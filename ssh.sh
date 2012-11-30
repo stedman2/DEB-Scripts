@@ -31,4 +31,4 @@ echo "SSH Setup Completed!"
 /etc/init.d/ssh restart
 #service apache2 stop
 # Message Of The Day - On login
-echo "Welcome! :) " >> /etc/motd
+echo "Welcome. Nice weather." >> /etc/motd
