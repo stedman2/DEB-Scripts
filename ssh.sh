@@ -30,11 +30,3 @@ echo "GSSAPICleanupCredentials yes" >> /etc/ssh/sshd_config
 echo "UsePAM yes" >> /etc/ssh/sshd_config
 echo "X11Forwarding no" >> /etc/ssh/sshd_config
 echo "UseDNS yes" >> /etc/ssh/sshd_config
-
-#echo "PermitRootLogin no" >> /etc/ssh/sshd_config
-#echo "AllowUsers exampleuser exampleuser2" >> /etc/ssh/sshd_config
-#echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
-
-service sshd restart
-#service apache2 stop
-
