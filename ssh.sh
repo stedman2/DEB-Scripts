@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# https://raw.github.com/stedman2/DEB-Scripts/master/ssh.sh
 # Update and stuff
 apt-get -y update && apt-get -y upgrade && apt-get -y install nano fail2ban 
 
